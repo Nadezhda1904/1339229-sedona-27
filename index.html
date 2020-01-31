@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -19,7 +20,7 @@
     </nav>
   </header>
   <main>
-    <h1>Седона</h1>
+    <h1 class="visually-hidden">Седона</h1>
     <div>
       <img src="img/welcome.svg" width="459" height="353" alt="Welcome to Sedona">
     </div>
@@ -33,7 +34,7 @@
           <p>— №1 —</p>
 
           <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-          <img src="img/feature-motel.jpg" width="800" height="256" alt="Мотель">
+          <img src="img/feature-motel.jpg" width="800" height="256" alt="Мотель в Седоне">
           <ul>
             <li>
               <h3>Жилье</h3>
@@ -86,9 +87,23 @@
     <section>
       <h2>Заинтересовались?</h2>
       <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие приложения гостиниц в Седоне</p>
-      <button type="button">Поиск гостиницы в Седоне</button>
-      <!--Форма-->
-      <img src="img/map.jpg" width="1200" height="594" alt="Карта">
+      <a href="#">Поиск гостиницы в Седоне</a>
+      <form action="#" method="get">
+        <label for="date-in">Дата заезда</label>
+        <input type="date" name="date-in" id="date-in">
+        <br>
+        <label for="date-out">Дата выезда</label>
+        <input type="date" name="date-out" id="date-out">
+        <br>
+        <label for="amounts-adult">Взрослые</label>
+        <input type="number" name="amount-adults" id="amount-adults" min="1" max="10" value="2" required>
+
+        <label for="amounts-children">Дети</label>
+        <input type="number" name="amount-children" id="amount-children" min="0" max="10" value="0" required>
+        <br>
+        <input type="submit" value="Найти">
+      </form>
+      <img src="img/map.jpg" width="1200" height="594" alt="Седона на карте">
     </section>
   </main>
   <footer>
@@ -105,7 +120,7 @@
     </div>
     <div>
       <p>website by</p>
-      <a href="https://htmlacademy.ru/intensive/htmlcss"></a>
+      <a href="https://htmlacademy.ru/intensive/htmlcss">THML Academy</a>
     </div>
   </footer>
 </body>

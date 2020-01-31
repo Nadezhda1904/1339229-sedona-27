@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -21,8 +22,49 @@
   </header>
   <main>
     <section class="filtres">
-      <h2>Фильтр гостиниц</h2>
-      <!--Форма фильтров-->
+      <h2 class="visually-hidden">Фильтр гостиниц</h2>
+      <form action="https://echo.htmlacademy.ru" method="get">
+        <fieldset>
+          <legend>Инфрастуктура</legend>
+          <ul>
+            <li>
+              <label><input type="checkbox" name="pool" checked>Бассейн</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="parking">Парковка</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="wi-fi">wi-fi</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset>
+          <legend>Тип жилья</legend>
+          <ul>
+            <li>
+              <label><input type="checkbox" name="hotel" checked>Гостиница</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="parking" checked>Мотель</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="apartments" checked>Апартаменты</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Стоимость в сутки(р):</legend>
+          <div class="range-number">
+            <label>От <input type="text" name="price-min" id="price-min" value="0"></label>
+            <label>До <input type="text" name="price-max" id="price-max" value="3000"></label>
+          </div>
+          <div class="range">
+
+          </div>
+          <input type="submit" value="Показать">
+        </fieldset>
+      </form>
     </section>
     <div class="sorting">
       <p>Найдено: 3</p>
@@ -35,12 +77,12 @@
       <div class="sorting-up-down">
         <ul>
           <li><a href="#">По возрастанию</a></li>
-          <li><a href="#">По убыванию</a>/li>
+          <li><a href="#">По убыванию</a></li>
         </ul>
       </div>
     </div>
     <section class="resalts">
-      <h2>Список гостиниц</h2>
+      <h2 class="visually-hidden">Список гостиниц</h2>
       <ul>
         <li>
           <h3>
@@ -57,7 +99,7 @@
         <li>
           <h3>
             <a href="#">Desert Quail Inn</a></h3>
-          <p>отель</p>
+          <p>мотель</p>
           <p>от 3000 Р.</p>
           <p>
             <img src="img/hotel-desert.jpg" width="135" height="90" alt="Desert Quail Inn">
@@ -69,7 +111,7 @@
         <li>
           <h3>
             <a href="#">Villas at Poco Diablo</a></h3>
-          <p>аппартаменты</p>
+          <p>апартаменты</p>
           <p>от 2000 Р.</p>
           <p>
             <img src="img/hotel-villas.jpg" width="135" height="90" alt="Villas at Poco Diablo">
