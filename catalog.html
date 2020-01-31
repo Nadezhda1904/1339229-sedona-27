@@ -11,16 +11,18 @@
   <header>
     <a href="index.html">
       <img src="img/logo.svg" width="140" height="71" alt="Логотип Седона">
-      <nav>
-        <ul>
-          <li><a href="">Информация</a></li>
-          <li><a href="">Фото и видео</a></li>
-          <li><a href="">Карта штата</a></li>
-          <li><a href="catalog.html">Гостиницы</a></li>
-        </ul>
-      </nav>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="">Информация</a></li>
+        <li><a href="">Фото и видео</a></li>
+        <li><a href="">Карта штата</a></li>
+        <li><a href="catalog.html">Гостиницы</a></li>
+      </ul>
+    </nav>
   </header>
   <main>
+    <h1 class="visually-hidden">Поиск гостиниц в Седоне</h1>
     <section class="filtres">
       <h2 class="visually-hidden">Фильтр гостиниц</h2>
       <form action="https://echo.htmlacademy.ru" method="get">
@@ -62,7 +64,7 @@
           <div class="range">
 
           </div>
-          <input type="submit" value="Показать">
+          <button type="submit">Показать</button>
         </fieldset>
       </form>
     </section>
@@ -74,12 +76,10 @@
         <li><a href="#">По типу</a></li>
         <li><a href="#">По рейтингу</a></li>
       </ul>
-      <div class="sorting-up-down">
-        <ul>
-          <li><a href="#">По возрастанию</a></li>
-          <li><a href="#">По убыванию</a></li>
-        </ul>
-      </div>
+      <ul>
+        <li><a href="#">По возрастанию</a></li>
+        <li><a href="#">По убыванию</a></li>
+      </ul>
     </div>
     <section class="resalts">
       <h2 class="visually-hidden">Список гостиниц</h2>
@@ -126,7 +126,7 @@
   <footer>
     <div>
       #VISITSEDONA<br>
-      Тел.: +7(495)666-02-66
+      <a href="tel:+74956660266">Тел.: +7(495)666-02-66</a>
     </div>
     <div>
       <ul>
