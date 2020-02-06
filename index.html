@@ -34,7 +34,7 @@
         </div>
         <ul class="feature">
           <li class="feature-item">
-            <div class="feature-item-1">
+            <div class="advantage advantage-town">
               <h3>Настоящий городок</h3>
 
               <p>— №1 —</p>
@@ -62,7 +62,7 @@
           </li>
           <li class="feature-item">
             <img src="img/feature-bridge.jpg" width="800" height="256" alt="Мост дьявола">
-            <div class="feature-item-2">
+            <div class="advantage advantage-bridge">
               <h3>Там есть мост дьявола</h3>
 
               <p>— №2 —</p>
@@ -93,14 +93,13 @@
           </li>
         </ul>
       </section>
-      <section class="search-hotel">
-        <div class="search-hotel-title">
-          <h2>Заинтересовались?</h2>
-          <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        </div>
-        <div class="search-hotel-popap">
-          <div class="button"><a href="#">Поиск гостиницы в Седоне</a></div>
-          <form action="#" method="get">
+      <section class="search">
+        <h2 class="search-title">Заинтересовались?</h2>
+        <p class="search-title">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
+          Седоне</p>
+        <p><a class="search-button" href="#">Поиск гостиницы в Седоне</a></p>
+        <div class="search-popap">
+          <form class="search-form" action="#" method="get">
             <label for="date-in">Дата заезда</label>
             <input type="date" name="date-in" id="date-in">
             <br>
@@ -113,7 +112,7 @@
             <label for="amounts-children">Дети</label>
             <input type="number" name="amount-children" id="amount-children" min="0" max="10" value="0" required>
             <br>
-            <button type="submit">Найти</button>
+            <button class="find" type="submit">Найти</button>
           </form>
         </div>
       </section>
@@ -124,13 +123,11 @@
         #VISITSEDONA<br>
         <a href="tel:+74956660266">Тел.: +7(495)666-02-66</a>
       </div>
-      <div class="social-cells">
-        <ul>
-          <li><a class="social-button" href="#">twitter</a></li>
-          <li><a class="social-button" href="#">facebook</a></li>
-          <li><a class="social-button" href="#">youtube</a></li>
-        </ul>
-      </div>
+      <ul class="social-cells">
+        <li><a class="social-button" href="#">twitter</a></li>
+        <li><a class="social-button" href="#">facebook</a></li>
+        <li><a class="social-button" href="#">youtube</a></li>
+      </ul>
       <div class="copyright">
         website by
         <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
