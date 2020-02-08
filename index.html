@@ -12,11 +12,11 @@
 <body>
   <div class="container">
     <header>
-      <img class="logo" src="img/logo.svg" width="140" height="71" alt="Логотип Седона">
       <nav class="main-navigation">
         <ul class="list-navigation">
-          <li><a href="">Информация</a></li>
-          <li><a href="">Фото и видео</a></li>
+          <li class="logo"><img src="img/logo.svg" width="140" height="71" alt="Логотип Седона"></li>
+          <li class="inform"><a href="">Информация</a></li>
+          <li class="foto"><a href="">Фото и видео</a></li>
           <li><a href="">Карта штата</a></li>
           <li><a href="catalog.html">Гостиницы</a></li>
         </ul>
@@ -34,70 +34,80 @@
         </div>
         <ul class="feature">
           <li class="feature-item">
-            <div class="advantage advantage-town">
-              <h3>Настоящий городок</h3>
+            <div class="feature-item-flex">
+              <div class="advantage">
+                <h3>Настоящий городок</h3>
 
-              <p>— №1 —</p>
+                <p>— №1 —</p>
 
-              <p>Седона — не аттракцион для туристов,<br> там течёт своя жизнь</p>
+                <p>Седона — не аттракцион для туристов,<br> там течёт своя жизнь</p>
+              </div>
+              <img src="img/feature-motel.jpg" width="800" height="256" alt="Мотель в Седоне">
             </div>
-            <img src="img/feature-motel.jpg" width="800" height="256" alt="Мотель в Седоне">
             <ul class="feature">
-              <li class="feature-item">
-                <h3>Жилье</h3>
+              <div class="feature-flex">
+                <li class="feature-item align">
+                  <h3>Жилье</h3>
 
-                <p>Рекомендуем пожить в настояще мотеле, все как в кино!</p>
-                </liclass="feature-item">
-              <li class="feature-item">
-                <h3>Еда</h3>
+                  <p>Рекомендуем пожить в настоящем<br> мотеле, все как в кино!</p>
+                </li>
+                <li class="feature-item align">
+                  <h3>Еда</h3>
 
-                <p>Всегда заказывайте фирменный бургер, вы не зазочаруетесь!</p>
-              </li>
-              <li class="feature-item">
-                <h3>Сувениры</h3>
+                  <p>Всегда заказывайте фирменный бургер,<br> вы не зазочаруетесь!</p>
+                </li>
+                <li class="feature-item align">
+                  <h3>Сувениры</h3>
 
-                <p>Не только китайского, но и местного производства!</p>
-              </li>
+                  <p>Не только китайского, но и местного<br> производства!</p>
+                </li>
+              </div>
             </ul>
           </li>
           <li class="feature-item">
-            <img src="img/feature-bridge.jpg" width="800" height="256" alt="Мост дьявола">
-            <div class="advantage advantage-bridge">
-              <h3>Там есть мост дьявола</h3>
+            <div class="feature-item-flex">
+              <img src="img/feature-bridge.jpg" width="800" height="256" alt="Мост дьявола">
+              <div class="advantage">
+                <h3>Там есть мост дьявола</h3>
 
-              <p>— №2 —</p>
+                <p>— №2 —</p>
 
-              <p>Да, по нему мождно пройти! Если, конечно, вы осмелитесь</p>
+                <p>Да, по нему мождно пройти! Если, конечно,<br> вы осмелитесь</p>
+              </div>
             </div>
           </li>
-          <li class="feature-item color">
+          <li class="feature-item align color">
             <h3>Небольшая площадь</h3>
 
             <p> — №3 —</p>
 
-            <p>Все достопримечательности находятся очень близко</p>
+            <p>Все достопримечательности<br> находятся очень близко</p>
           </li>
-          <li class="feature-item color">
+          <li class="feature-item align color">
             <h3>Красивая дорога</h3>
 
             <p> — №4 —</p>
 
-            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            <p>Ехать в Седону из Лас-Вегаса совсем<br> не скучно!</p>
           </li>
-          <li class="feature-item color">
+          <li class="feature-item align color">
             <h3>Мало туристов</h3>
 
             <p> — №5 —</p>
 
-            <p>Большинство едет в Гранд-Каньон и толпится там</p>
+            <p>Большинство едет в Гранд-Каньон<br> и толпится там</p>
           </li>
         </ul>
       </section>
       <section class="search">
-        <h2 class="search-title">Заинтересовались?</h2>
-        <p class="search-title">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
-          Седоне</p>
-        <p><a class="search-button" href="#">Поиск гостиницы в Седоне</a></p>
+        <div class="search-flex">
+          <h2 class="search-title">Заинтересовались?</h2>
+          <p class="search-title">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц
+            в
+            Седоне</p>
+          <p><a class="search-button" href="#">Поиск гостиницы в Седоне</a></p>
+        </div>
+
         <div class="search-popap">
           <form class="search-form" action="#" method="get">
             <label for="date-in">Дата заезда</label>
@@ -106,10 +116,10 @@
             <label for="date-out">Дата выезда</label>
             <input type="date" name="date-out" id="date-out">
             <br>
-            <label for="amounts-adult">Взрослые</label>
+            <label for="amount-adults">Взрослые</label>
             <input type="number" name="amount-adults" id="amount-adults" min="1" max="10" value="2" required>
 
-            <label for="amounts-children">Дети</label>
+            <label for="amount-children">Дети</label>
             <input type="number" name="amount-children" id="amount-children" min="0" max="10" value="0" required>
             <br>
             <button class="find" type="submit">Найти</button>
@@ -119,18 +129,22 @@
       <img src="img/map.jpg" width="1200" height="594" alt="Седона на карте">
     </main>
     <footer class="main-footer">
-      <div class="contacts">
-        #VISITSEDONA<br>
-        <a href="tel:+74956660266">Тел.: +7(495)666-02-66</a>
-      </div>
-      <ul class="social-cells">
-        <li><a class="social-button" href="#">twitter</a></li>
-        <li><a class="social-button" href="#">facebook</a></li>
-        <li><a class="social-button" href="#">youtube</a></li>
-      </ul>
-      <div class="copyright">
-        website by
-        <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+      <div class="footer-container">
+        <div class="contacts">
+          <p>#VISITSEDONA<br>
+            <a href="tel:+74956660266">Тел.: +7(495)666-02-66</a></p>
+        </div>
+        <ul class="social-cells">
+          <div class="social-cells-container">
+            <li><a class="social-button" href="#">tw</a></li>
+            <li><a class="social-button" href="#">fb</a></li>
+            <li><a class="social-button" href="#">yt</a></li>
+          </div>
+        </ul>
+        <div class="copyright">
+          website by
+          <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+        </div>
       </div>
     </footer>
   </div>
