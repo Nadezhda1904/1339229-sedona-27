@@ -12,14 +12,18 @@
 <body>
   <div class="container">
     <header>
-      <nav class="main-navigation">
+      <nav class="main-menu">
         <ul class="list-navigation">
-          <li class="logo"><img src="img/logo.svg" width="140" height="71" alt="Логотип Седона"></li>
-          <li class="inform"><a href="">Информация</a></li>
-          <li class="foto"><a href="">Фото и видео</a></li>
-          <li><a href="">Карта штата</a></li>
-          <li><a href="catalog.html">Гостиницы</a></li>
+          <div class="left">
+            <li class="inform"><a href="">Информация</a></li>
+            <li class="photo"><a href="">Фото и видео</a></li>
+          </div>
+          <div class="right">
+            <li class="map"><a href="">Карта штата</a></li>
+            <li class="hotel"><a href="catalog.html">Гостиницы</a></li>
+          </div>
         </ul>
+        <img class="logo" src="img/logo.svg" width="140" height="71" alt="Логотип Седона">
       </nav>
     </header>
     <main>
@@ -46,18 +50,18 @@
             </div>
             <ul class="feature">
               <div class="feature-flex">
-                <li class="feature-item align">
-                  <h3>Жилье</h3>
+                <li class="feature-item feature-item-housing align">
+                  <h3 class="housing">Жильё</h3>
 
                   <p>Рекомендуем пожить в настоящем<br> мотеле, все как в кино!</p>
                 </li>
-                <li class="feature-item align">
-                  <h3>Еда</h3>
+                <li class="feature-item feature-item-food align">
+                  <h3 class="food">Еда</h3>
 
                   <p>Всегда заказывайте фирменный бургер,<br> вы не зазочаруетесь!</p>
                 </li>
-                <li class="feature-item align">
-                  <h3>Сувениры</h3>
+                <li class="feature-item feature-item-gift align">
+                  <h3 class="gift">Сувениры</h3>
 
                   <p>Не только китайского, но и местного<br> производства!</p>
                 </li>
@@ -102,10 +106,9 @@
       <section class="search">
         <div class="search-flex">
           <h2 class="search-title">Заинтересовались?</h2>
-          <p class="search-title">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц
-            в
-            Седоне</p>
-          <p><a class="search-button" href="#">Поиск гостиницы в Седоне</a></p>
+          <p class="search-title">Укажите предполагаемые даты поездки,<br>
+            и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <a class="search-button" href="#">Поиск гостиницы в Седоне</a>
         </div>
 
         <div class="search-popap">
@@ -135,15 +138,14 @@
             <a href="tel:+74956660266">Тел.: +7(495)666-02-66</a></p>
         </div>
         <ul class="social-cells">
-          <div class="social-cells-container">
-            <li><a class="social-button" href="#">tw</a></li>
-            <li><a class="social-button" href="#">fb</a></li>
-            <li><a class="social-button" href="#">yt</a></li>
-          </div>
+          <li><a class="social-button social-tw" href="#"><span class="visually-hidden">Twitter</span></a></li>
+          <li><a class="social-button social-fb" href="#"><span class="visually-hidden">Facebook></span></a></li>
+          <li><a class="social-button social-yt" href="#"><span class="visually-hidden">YouTube></span></a></li>
         </ul>
         <div class="copyright">
           website by
-          <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+          <a class="html-academy" href="https://htmlacademy.ru/intensive/htmlcss">
+            <span class="visually-hidden">HTML Academy</span></a>
         </div>
       </div>
     </footer>
