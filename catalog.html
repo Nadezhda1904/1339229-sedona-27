@@ -74,11 +74,8 @@
           <fieldset class="filter-price">
             <legend>Стоимость в сутки (р):</legend>
             <div class="range-number">
-              <input class="range-number-min range-number-input" type="text" name="price-min" id="filter-price-min"
-                value="от 0">
-              <label for="filter-price-min"></label>
-              <input class="range-number-max" type="text" name="price-max" id="filter-price-max" value="до 3000">
-              <label for="filter-price-max"></label>
+              <label class="min-price">от <input type="number" name="min-price" value="0"></label>
+              <label class="max-price">до <input type="number" name="max-price" value="3000"></label>
             </div>
 
             <div class="range-slider-track">

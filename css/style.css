@@ -757,6 +757,10 @@ p.search-text {
   background-position: 0 0;
 }
 
+.filter-price {
+  width: 310px;
+}
+
 .filter-price legend {
   margin-bottom: 15px;
 
@@ -765,50 +769,62 @@ p.search-text {
   font-weight: 700;
 }
 
-
 .range-number {
   position: relative;
   margin: 0px;
 
+  height: 36px;
+
+  font-size: 0;
+
   border: 2px solid #ffffff;
-  border-radius: 3px;
+  border-radius: 2px;
+}
+
+.range-number label {
+  display: inline-block;
+
+  font-size: 14px;
+  line-height: 30px;
+  vertical-align: top;
+
+  cursor: pointer;
+}
+
+.range-number .min-price,
+.range-number .max-price {
+  padding-left: 65px;
 }
 
 .range-number input {
-  margin: 0px;
-  padding: 0px;
+  width: 50px;
+  margin: 0;
 
-  width: 159px;
-  height: 36px;
+  color: inherit;
+  font: inherit;
 
-  text-transform: uppercase;
-  text-align: center;
-  color: #ffffff;
-
-  background-color: transparent;
+  background: none;
   border: none;
 }
 
-.range-number-input+label::before {
+.range-number::after {
   content: "";
   position: absolute;
-  top: 7px;
+  top: 50%;
+  left: 50%;
 
   width: 2px;
   height: 22px;
 
-  background-image: url("../img/line.png");
-  background-repeat: no-repeat;
-  background-position: 0 0;
+  background: #ffffff;
+  transform: translate(-50%, -50%);
 }
 
 .range-slider-track {
   position: relative;
-
   margin-top: 21px;
-  margin-left: 10px;
 
-  height: 2px;
+  height: 3px;
 
   background-color: rgba(255, 255, 255, .3);
 }
@@ -829,6 +845,8 @@ p.search-text {
   background: #ababab;
   border: 8px solid #ffffff;
   border-radius: 50%;
+
+  cursor: pointer;
 }
 
 .range-slider-pin-min {
@@ -837,6 +855,10 @@ p.search-text {
 
 .range-slider-pin-max {
   left: 80%
+}
+
+.range-slider-pin:hover {
+  background: #1c4f80;
 }
 
 .filter-button {
