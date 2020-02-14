@@ -11,12 +11,12 @@
 
 <body>
   <div class="container">
-    <header>
+    <header class="main-header">
       <nav class="navigation">
         <ul class="menu">
-          <li><a href="">Информация</a></li>
-          <li><a href="">Фото и видео</a></li>
-          <li class="left"><a href="">Карта штата</a></li>
+          <li><a href="#">Информация</a></li>
+          <li><a href="#">Фото и видео</a></li>
+          <li class="left"><a href="#">Карта штата</a></li>
           <li class="menu-item"><a href="catalog.html">Гостиницы</a></li>
         </ul>
         <img class="logo" src="img/logo.svg" width="140" height="71" alt="Логотип Седона">
@@ -36,11 +36,11 @@
           <li class="feature-item">
             <div class="feature-item-flex">
               <div class="advantage">
-                <h3>Настоящий городок</h3>
+                <h3>Настоящий<br> городок</h3>
 
                 <p>— №1 —</p>
 
-                <p>Седона — не аттракцион для туристов,<br> там течёт своя жизнь</p>
+                <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
               <img src="img/feature-motel.jpg" width="800" height="256" alt="Мотель в Седоне">
             </div>
@@ -66,11 +66,11 @@
             <div class="feature-item-flex">
               <img src="img/feature-bridge.jpg" width="800" height="256" alt="Мост дьявола">
               <div class="advantage">
-                <h3>Там есть мост дьявола</h3>
+                <h3>Там есть<br> мост дьявола</h3>
 
                 <p>— №2 —</p>
 
-                <p>Да, по нему мождно пройти! Если, конечно, вы осмелитесь</p>
+                <p class="advantage-position">Да, по нему мождно пройти! Если, конечно, вы осмелитесь</p>
               </div>
             </div>
           </li>
@@ -102,28 +102,48 @@
         <p class="search-text">Укажите предполагаемые даты поездки,<br>
           и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <a class="search-button" href="#">Поиск гостиницы в Седоне</a>
-
         <form class="search-form" action="#" method="get">
-          <p class="search-item date"><label for="search-date-in">Дата заезда:</label>
-            <input type="date" name="date-in" id="search-date-in">
+          <p class="search-date">
+            <label for="search-date-in">Дата заезда:</label>
+            <input type="text" name="date-in" id="search-date-in" value="24 апреля 2017">
+            <button class="calendar" type="button">
+              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
+                <path
+                  d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z" />
+                <path
+                  d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z" />
+              </svg>
+            </button>
           </p>
-          <p class="search-item date"><label for="search-date-out">Дата выезда:</label>
-            <input type="date" name="date-out" id="search-date-out">
+          <p class="search-date"><label for="search-date-out">Дата выезда:</label>
+            <input type="text" name="date-out" id="search-date-out" value="4 июля 2017">
+            <button class="calendar" type="button">
+              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
+                <path
+                  d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z" />
+                <path
+                  d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z" />
+              </svg>
+            </button>
           </p>
-
-          <p class="search-item people adults"><label for="amount-adults">Взрослые:</label>
-            <input type="number" name="amount-adults" id="amount-adults" min="1" max="10" value="2" required>
+          <p class="search-people">
+            <label class="adults" for="amount-adults">Взрослые:</label>
+            <button class="btn" type="button"> - </button>
+            <input type="text" name="amount-adults" id="amount-adults" value="2">
+            <button class="btn" type="button"> + </button>
           </p>
-          <p class="search-item people children"><label for="search-amount-children">Дети:</label>
-            <input type="number" name="amount-children" id="search-amount-children" min="0" max="10" value="0" required>
+          <p class="search-people">
+            <label class="children" for="search-amount-children">Дети:</label>
+            <button class="btn" type="button">-</button>
+            <input type="text" name="amount-children" id="search-amount-children" value="0">
+            <button class="btn" type="button">+</button>
           </p>
-
-          <button class="find" type="submit">Найти</button>
+          <button class="button-find" type="submit">Найти</button>
         </form>
-        <img class="map" src="img/map.jpg" width="1200" height="594" alt="Седона на карте">
       </section>
+      <img class="map" src="img/map.jpg" width="1200" height="594" alt="Седона на карте">
     </main>
-    <footer class="main-footer margin">
+    <footer class="main-footer footer-position">
       <div class="footer-container">
         <div class="contacts">
           <p>#VISITSEDONA</p>
@@ -160,7 +180,7 @@
           </li>
         </ul>
         <div class="copyright">
-          website by
+          <p>website by</p>
           <a class="html-academy" href="https://htmlacademy.ru/intensive/htmlcss">
             <span class="visually-hidden">HTML Academy</span>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108.08 36.85">

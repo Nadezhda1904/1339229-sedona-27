@@ -15,14 +15,14 @@
       <nav class="navigation">
         <ul class="menu">
           <li><a href="">Информация</a></li>
-          <li><a href="">Фото и видео</a></li>
-          <li class="left"><a href="">Карта штата</a></li>
+          <li><a href="#">Фото и видео</a></li>
+          <li class="left"><a href="#">Карта штата</a></li>
           <li class="menu-item activ-page"><a href="catalog.html">Гостиницы</a></li>
         </ul>
-        <a href="index.html">
-          <img class="logo" src="img/logo.svg" width="140" height="71" alt="Логотип Седона">
-        </a>
       </nav>
+      <a href="index.html">
+        <img class="logo" src="img/logo.svg" width="140" height="71" alt="Логотип Седона">
+      </a>
     </header>
     <main>
       <h1 class="visually-hidden">Поиск гостиниц в Седоне</h1>
@@ -44,7 +44,7 @@
               </li>
               <li class="filter-option">
                 <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="wi-fi"
-                  id="filter-wi-fi" disabled>
+                  id="filter-wi-fi">
                 <label for="filter-wi-fi">wi-fi</label>
               </li>
             </ul>
@@ -74,13 +74,19 @@
           <fieldset class="filter-price">
             <legend>Стоимость в сутки (р):</legend>
             <div class="range-number">
-              <label><input class="range-number-min" type="text" name="price-min" id="price-min" value="от 0"></label><!--
-              --><label><input class="range-number-max" type="text" name="price-max" id="price-max"
-                  value="до 3000"></label>
+              <input class="range-number-min range-number-input" type="text" name="price-min" id="filter-price-min"
+                value="от 0">
+              <label for="filter-price-min"></label>
+              <input class="range-number-max" type="text" name="price-max" id="filter-price-max" value="до 3000">
+              <label for="filter-price-max"></label>
             </div>
-            <div class="range">
 
+            <div class="range-slider-track">
+              <div class="bar"></div>
+              <div class="range-slider-pin range-slider-pin-min"></div>
+              <div class="range-slider-pin range-slider-pin-max"></div>
             </div>
+
             <button class="filter-button" type="submit">Показать</button>
           </fieldset>
         </form>
@@ -121,7 +127,6 @@
             <li class="found-item">
               <div class="found-item-hotel">
                 <img src="img/hotel-amara.jpg" width="135" height="90" alt="Amara Resort & Spa">
-
                 <div class="discription">
                   <h3 class="hotel"><a href="#">Amara Resort & Spa</a></h3>
                   <div class="discription-class">
@@ -131,7 +136,6 @@
                   <a class="details" href="#">подробнее</a>
                   <a class="booking" href="#">Забронировать</a>
                 </div>
-
               </div>
               <div>
                 <p class="stars stars-four"><span class="visually-hidden">4 звезды</span></p>
@@ -140,10 +144,8 @@
             </li>
 
             <li class="found-item">
-
               <div class="found-item-hotel">
                 <img src="img/hotel-desert.jpg" width="135" height="90" alt="Desert Quail Inn">
-
                 <div class="discription">
                   <h3 class="hotel"><a href="#">Desert Quail Inn</a></h3>
                   <div class="discription-class">
@@ -158,11 +160,9 @@
                 <p class="stars stars-three"><span class="visually-hidden">3 звезды</span></p>
                 <p class="rating">Рейтинг: 8,9</p>
               </div>
-
             </li>
 
             <li class="found-item">
-
               <div class="found-item-hotel">
                 <img src="img/hotel-villas.jpg" width="135" height="90" alt="Villas at Poco Diablo">
 
@@ -175,13 +175,11 @@
                   <a class="details" href="#">Подробнее</a>
                   <a class="booking" href="#">Забронировать</a>
                 </div>
-
               </div>
               <div>
                 <p class="stars stars-two"><span class="visually-hidden">2 звезды</span></p>
                 <p class="rating">Рейтинг: 9,2</p>
               </div>
-
             </li>
           </ul>
         </div>
@@ -190,8 +188,8 @@
     <footer class="main-footer">
       <div class="footer-container">
         <div class="contacts">
-          <p>#VISITSEDONA<br>
-            <a href="tel:+74956660266">Тел.: +7(495)666-02-66</a></p>
+          <p>#VISITSEDONA</p>
+          <a href="tel:+74956660266">Тел.: +7(495)666-02-66</a>
         </div>
         <ul class="social-cells">
           <li>
@@ -224,7 +222,7 @@
           </li>
         </ul>
         <div class="copyright">
-          website by
+          <p>website by</p>
           <a class="html-academy" href="https://htmlacademy.ru/intensive/htmlcss">
             <span class="visually-hidden">HTML Academy</span>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108.08 36.85">
@@ -267,7 +265,6 @@
             </svg>
           </a>
         </div>
-
       </div>
     </footer>
   </div>
