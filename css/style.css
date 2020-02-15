@@ -79,7 +79,7 @@ a {
   width: 239px;
   height: 56px;
 
-  text-align: start;
+  text-align: left;
 }
 
 .map a,
@@ -90,7 +90,7 @@ a {
   width: 239px;
   height: 56px;
 
-  text-align: end;
+  text-align: right;
 }
 
 .left {
