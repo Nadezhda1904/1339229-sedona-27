@@ -28,11 +28,10 @@ html {
   width: 1200px;
 
   background-color: #f2f2f2;
-  background-color: #ffffff;
-  background-image: url("../img/background-photo.jpg");
+  /* background-image: url("../img/background-photo.jpg");
   background-position: top center;
-  background-repeat: no-repeat;
-  box-shadow: 0 5px 15px 0 rgba(0, 0, 1, 0.2);
+  background-repeat: no-repeat;*/
+  box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
 }
 
 .visually-hidden {
@@ -58,11 +57,11 @@ a {
 .menu {
   display: flex;
   flex-wrap: wrap;
-  padding-left: 0px;
+  padding-left: 72px;
+  padding-right: 72px;
   margin: 0;
 
   width: 1200px;
-  min-height: 56px;
 
   line-height: 26px;
   font-weight: 700;
@@ -72,22 +71,30 @@ a {
   list-style: none;
 }
 
-.menu li {
+.information a,
+.photo a {
   display: block;
   padding-top: 15px;
 
   width: 239px;
   height: 56px;
 
-  text-align: center;
+  text-align: start;
+}
+
+.map a,
+.hotel a {
+  display: block;
+  padding-top: 15px;
+
+  width: 239px;
+  height: 56px;
+
+  text-align: end;
 }
 
 .left {
   margin-left: auto;
-}
-
-.menu-item {
-  padding-left: 25px;
 }
 
 .logo {
@@ -125,10 +132,17 @@ a {
 
   height: 510px;
 
-  background-image: url("../img/intro-mask.svg");
+  background:
+    url(../img/intro-mask.svg) 50% 100% no-repeat,
+    url(../img/background-photo.jpg) 0% 20% no-repeat;
+  background-color: #5496bd;
+
+  /*background-image: url("../img/intro-mask.svg");
   background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: auto;
+  background-repeat: no-repeat;*/
+  background-size: auto
+    /*, 459px 353px*/
+  ;
 }
 
 .intro-text {
@@ -654,7 +668,9 @@ p.search-text {
 }
 
 .inner-page {
-  background-image: url("../img/background-filter-mod.jpg");
+  background-image: url("../img/background-filter.jpg");
+  background-position: 25%;
+  background-color: #5496bd;
 }
 
 /*фильтры*/
@@ -715,7 +731,7 @@ p.search-text {
   user-select: none;
 }
 
-.filter-input-checkbox+label::before {
+.filter-input-checkbox + label::before {
   content: "";
   position: absolute;
   top: 0px;
@@ -729,7 +745,7 @@ p.search-text {
   background-position: 0 0;
 }
 
-.filter-input-checkbox:checked+label::before {
+.filter-input-checkbox:checked + label::before {
   content: "";
   position: absolute;
   top: 0px;
@@ -743,7 +759,7 @@ p.search-text {
   background-position: 0 0;
 }
 
-.filter-input-checkbox:disabled+label::before {
+.filter-input-checkbox:disabled + label::before {
   content: "";
   position: absolute;
   top: 0px;
