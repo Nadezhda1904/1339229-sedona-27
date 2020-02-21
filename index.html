@@ -106,7 +106,7 @@
         <form class="search-form" action="#" method="get">
           <p class="search-date">
             <label for="search-date-in">Дата заезда:</label>
-            <input type="text" name="date-in" id="search-date-in" value="24 апреля 2017">
+            <input type="text" name="date-in" id="search-date-in" value="24 апреля 2017" required>
             <button class="calendar" type="button">
               <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
                 <path
@@ -117,7 +117,7 @@
             </button>
           </p>
           <p class="search-date"><label for="search-date-out">Дата выезда:</label>
-            <input type="text" name="date-out" id="search-date-out" value="4 июля 2017">
+            <input type="text" name="date-out" id="search-date-out" value="4 июля 2017" required>
             <button class="calendar" type="button">
               <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
                 <path
@@ -230,6 +230,7 @@
       </div>
     </footer>
   </div>
+  <script src="js/search-form.js"></script>
 </body>
 
 </html>
