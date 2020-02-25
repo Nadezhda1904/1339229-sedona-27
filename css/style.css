@@ -485,7 +485,6 @@ p.search-text {
 
 .search-form input {
   font-size: 14px;
-  line-height: 26;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -812,7 +811,7 @@ p.search-text {
 
 .filter ul {
   margin: 0;
-  margin-top: 20px;
+  margin-top: 25px;
   padding: 0;
 
   list-style: none;
@@ -822,11 +821,12 @@ p.search-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
+  /*-webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center;
-  padding-right: 72px;
-  padding-left: 72px;
+          align-items: center;*/
+          padding: 28px 72px 28px 72px;
+ /* padding-right: 72px;
+  padding-left: 72px;*/
 
   width: 100%;
   min-height: 217px;
@@ -863,6 +863,8 @@ p.search-text {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+
+  cursor: pointer;
 }
 
 .filter-input-checkbox+label::before {
@@ -877,6 +879,8 @@ p.search-text {
   background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+
+  cursor: pointer;
 }
 
 .filter-input-checkbox:checked+label::before {
@@ -891,6 +895,8 @@ p.search-text {
   background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+
+  cursor: pointer;
 }
 
 .filter-input-checkbox:disabled+label::before {
@@ -905,10 +911,12 @@ p.search-text {
   background-image: url("../img/checkbox-disabled.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+
+  cursor: pointer;
 }
 
 .filter-price legend {
-  margin-bottom: 7px;
+  margin-bottom: 11px;
 
   font-size: 16px;
   line-height: 21px;
@@ -919,7 +927,7 @@ p.search-text {
   position: relative;
   margin: 0px;
 
-  width: 320px;
+  width: 318px;
   height: 36px;
 
   font-size: 0;
@@ -939,9 +947,12 @@ p.search-text {
   cursor: pointer;
 }
 
-.range-number .min-price,
+.range-number .min-price {
+  padding-left: 65px;
+}
+
 .range-number .max-price {
-  padding-left: 70px;
+  padding-left: 76px;
 }
 
 .range-number input {
@@ -1014,7 +1025,7 @@ p.search-text {
 .filter-button {
   display: block;
   padding: 0px;
-  margin-top: 34px;
+  margin-top: 31px;
   margin-left: 87px;
   margin-right: auto;
 
@@ -1028,6 +1039,8 @@ p.search-text {
   border: 2px solid #ffffff;
   border-radius: 3px;
   background-color: transparent;
+
+  cursor: pointer;
 }
 
 .filter-button:hover,
@@ -1035,6 +1048,8 @@ p.search-text {
   color: #000000;
 
   background-color: #ffffff;
+
+  cursor: pointer;
 }
 
 /*результаты фильтра*/
@@ -1045,6 +1060,7 @@ p.search-text {
 .sorting ul {
   margin: 0;
   padding: 0;
+  padding-top: 6px;
 
   list-style: none;
 }
@@ -1053,12 +1069,8 @@ p.search-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-left: 72px;
-  padding-right: 72px;
-  border: 1px solid #e5e5e5;
+  padding: 29px 72px 29px 72px;
+  border-bottom: 2px solid #e5e5e5;
 
   width: 100%;
   min-height: 88px;
@@ -1094,6 +1106,8 @@ p.search-text {
 }
 
 .sorting p:nth-child(1) {
+  margin: 0px;
+
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -1101,7 +1115,9 @@ p.search-text {
 }
 
 .sorting p:nth-child(2) {
-  padding-left: 45px;
+  margin: 0px;
+  padding-left: 47px;
+  padding-top: 6px;
 
   font-size: 12px;
   line-height: 18px;
@@ -1188,15 +1204,12 @@ h3 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-right: 72px;
+  padding: 24px 72px 24px 72px;
 
   width: auto;
   min-height: 151px;
 
-  border: 1px solid #e5e5e5;
+  border-bottom: 2px solid #e5e5e5;
 }
 
 .found-item-hotel {
@@ -1206,37 +1219,31 @@ h3 {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-left: 72px;
-
   width: 600px;
 }
 
 .found-item-hotel img {
   display: block;
+  margin-top: 6px;
 }
 
 .discription {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-left: 30px;
 
   width: 259px;
-  min-height: 100px;
+  min-height: 90px;
 }
 
 .discription-class {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-top: 6px;
 
   width: 100%;
 }
@@ -1249,10 +1256,6 @@ h3 {
 
 .discription-class p:nth-child(2) {
   width: 142px;
-}
-
-.discription-class p {
-  /*padding-top: 13px;*/
 }
 
 .found-list h3 a {
@@ -1277,7 +1280,7 @@ h3 {
   padding-top: 4px;
   padding-bottom: 4px;
   margin-right: 6px;
-  margin-top: 10px;
+  margin-top: 9px;
 
   height: 28px;
 
@@ -1307,7 +1310,7 @@ h3 {
   padding-right: 17px;
   padding-top: 4px;
   padding-bottom: 4px;
-  margin-top: 10px;
+  margin-top: 9px;
 
   height: 28px;
 
@@ -1366,8 +1369,9 @@ p.rating {
   padding-top: 5px;
   padding-bottom: 5px;
   margin-left: 0px;
-  margin-top: 40px;
+  margin-top: 50px;
 
-  background-color: #666666;
-  opacity: 0.3;
+  color: #666666;
+
+  background-color: #f2f2f2;
 }
