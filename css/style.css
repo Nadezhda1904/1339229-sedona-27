@@ -466,6 +466,15 @@ p.search-text {
   transition: transform 0.9s, -webkit-transform 0.9s;
 }
 
+.block-noon {
+  min-height: 0px;
+  transition: min-height 0.9s;
+}
+
+.block-view {
+  min-height: 441px;
+}
+
 .search-form-none {
   -webkit-transform: translateY(-100%);
       -ms-transform: translateY(-100%);
@@ -521,14 +530,14 @@ p.search-text {
 }
 
 .search-date input:hover {
-  background-color: #ebebeb
+  background-color: #ebebeb;
 }
 
 .search-date input:focus {
   background-color: #ffffff;
   -webkit-box-shadow: inset 0 0 0 2px #e5e5e5;
           box-shadow: inset 0 0 0 2px #e5e5e5;
-  outline: 0
+  outline: 0;
 }
 
 .search-date .calendar {
@@ -549,16 +558,16 @@ p.search-text {
 
 .calendar:focus path,
 .calendar:hover path {
-  fill: #000000
+  fill: #000000;
 }
 
 .calendar:active path {
-  fill: #81b3d2
+  fill: #81b3d2;
 }
 
 .calendar:active,
 .calendar:focus {
-  outline: 0
+  outline: 0;
 }
 
 .search-people {
@@ -587,6 +596,17 @@ p.search-text {
   border: none;
 
   outline: none;
+}
+
+.search-people input:hover {
+  background-color: #ebebeb;
+}
+
+.search-people input:focus {
+  background-color: #ffffff;
+  -webkit-box-shadow: inset 0 0 0 2px #e5e5e5;
+          box-shadow: inset 0 0 0 2px #e5e5e5;
+  outline: 0;
 }
 
 .search-people .adults {
@@ -646,6 +666,10 @@ p.search-text {
 .button-find:active {
   color: #88b6d1;
   background-color: #5496bd;
+}
+
+.map-img {
+  border: none;
 }
 
 /*футер*/
@@ -714,7 +738,7 @@ p.search-text {
   list-style: none;
 }
 
-.social-cells li {
+.social-cells li:not(:last-child) {
   margin-right: 6px;
 }
 
@@ -811,7 +835,7 @@ p.search-text {
 
 .filter ul {
   margin: 0;
-  margin-top: 25px;
+  margin-top: 22px;
   padding: 0;
 
   list-style: none;
@@ -821,12 +845,7 @@ p.search-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  /*-webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;*/
-          padding: 28px 72px 28px 72px;
- /* padding-right: 72px;
-  padding-left: 72px;*/
+  padding: 28px 72px 28px 72px;
 
   width: 100%;
   min-height: 217px;
@@ -848,7 +867,7 @@ p.search-text {
 }
 
 .filter-option {
-  padding-left: 45px;
+  padding-left: 47px;
 }
 
 .filter-option:not(:last-child) {
@@ -865,6 +884,10 @@ p.search-text {
           user-select: none;
 
   cursor: pointer;
+}
+
+.filter-input:focus + label::before {
+  outline: auto;
 }
 
 .filter-input-checkbox+label::before {
@@ -916,7 +939,7 @@ p.search-text {
 }
 
 .filter-price legend {
-  margin-bottom: 11px;
+  margin-bottom: 8px;
 
   font-size: 16px;
   line-height: 21px;
@@ -1060,7 +1083,7 @@ p.search-text {
 .sorting ul {
   margin: 0;
   padding: 0;
-  padding-top: 6px;
+  padding-top: 15px;
 
   list-style: none;
 }
@@ -1069,11 +1092,11 @@ p.search-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 29px 72px 29px 72px;
+  padding: 21px 72px 21px 72px;
   border-bottom: 2px solid #e5e5e5;
 
   width: 100%;
-  min-height: 88px;
+  min-height: 86px;
 
   text-transform: none;
 }
@@ -1107,6 +1130,7 @@ p.search-text {
 
 .sorting p:nth-child(1) {
   margin: 0px;
+  padding-top: 10px;
 
   font-size: 21px;
   line-height: 26px;
@@ -1117,7 +1141,7 @@ p.search-text {
 .sorting p:nth-child(2) {
   margin: 0px;
   padding-left: 47px;
-  padding-top: 6px;
+  padding-top:15px;
 
   font-size: 12px;
   line-height: 18px;
@@ -1153,11 +1177,19 @@ a.sorting-activ {
   border: none;
 }
 
-.rating-button {
-  display: block;
+.rating-button,
+.rating-button-current  {
+  display: inline-block;
 
-  width: 25px;
-  height: 15px;
+  text-align: center;
+  vertical-align: middle;
+
+  width: 15px;
+  height: 25px;
+}
+
+.rating-button {
+  margin-right: 5px;
 }
 
 .rating-button path {
@@ -1204,7 +1236,7 @@ h3 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 24px 72px 24px 72px;
+  padding: 23px 72px 23px 72px;
 
   width: auto;
   min-height: 151px;
@@ -1306,8 +1338,8 @@ h3 {
 .booking {
   display: block;
 
-  padding-left: 17px;
-  padding-right: 17px;
+  padding-left: 18px;
+  padding-right: 18px;
   padding-top: 4px;
   padding-bottom: 4px;
   margin-top: 9px;
@@ -1349,27 +1381,30 @@ p.stars {
 }
 
 p.stars-four {
-  width: 89px;
+  width: 87px;
+  height: 24px;
   background-image: url("../img/star.svg");
 }
 
 p.stars-three {
   width: 65px;
+  height: 24px;
   background-image: url("../img/star.svg");
 }
 
 p.stars-two {
   width: 42px;
+  height: 24px;
   background-image: url("../img/star.svg");
 }
 
 p.rating {
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-left: 13px;
+  padding-right: 13px;
+  padding-top: 3px;
+  padding-bottom: 3px;
   margin-left: 0px;
-  margin-top: 50px;
+  margin-top: 46px;
 
   color: #666666;
 
