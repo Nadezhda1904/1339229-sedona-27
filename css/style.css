@@ -668,6 +668,14 @@ p.search-text {
   background-color: #5496bd;
 }
 
+.map-img-container {
+  width: 1200px;
+  height: 593px;
+  background-image: url(../img/map.jpg);
+  background-repeat: no-repeat;
+  background-size: 1200px 593px;
+}
+
 .map-img {
   border: none;
 }
