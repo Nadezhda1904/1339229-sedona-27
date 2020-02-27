@@ -158,7 +158,7 @@ a {
 }
 
 /*текст шапки*/
-h2 {
+.intro-text h2 {
   padding-left: 340px;
   padding-right: 340px;
   margin: 0px;
@@ -1233,7 +1233,7 @@ a.sorting-activ {
   margin: 0;
 }
 
-h3 {
+.hotel {
   margin: 0;
 
   font-size: 21px;
@@ -1302,7 +1302,7 @@ h3 {
   width: 142px;
 }
 
-.found-list h3 a {
+.hotel a {
   color: #000000;
 }
 
@@ -1350,8 +1350,8 @@ h3 {
 .booking {
   display: block;
 
-  padding-left: 18px;
-  padding-right: 18px;
+  padding-left: 16px;
+  padding-right: 16px;
   padding-top: 4px;
   padding-bottom: 4px;
   margin-top: 9px;
